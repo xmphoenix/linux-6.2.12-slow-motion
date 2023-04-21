@@ -44,7 +44,10 @@ busybox_build()
 {
     if [ ! -f "./rootfs/dev/console" ];then
         echo "the rootfs console inode is not exit !"
+        mkdir -p rootfs/dev
+        cd rootfs/dev
         sudo mknod console c 5 1
+        cd ../../
     fi 
     
     cd busybox-1.36.0
