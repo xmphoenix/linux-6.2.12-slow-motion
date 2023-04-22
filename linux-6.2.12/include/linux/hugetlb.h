@@ -255,7 +255,8 @@ static inline void adjust_range_if_pmd_sharing_possible(
 static inline struct page *hugetlb_follow_page_mask(struct vm_area_struct *vma,
 				unsigned long address, unsigned int flags)
 {
-	BUILD_BUG(); /* should never be compiled in if !CONFIG_HUGETLB_PAGE*/
+    //BUILD_BUG(); /* should never be compiled in if !CONFIG_HUGETLB_PAGE*/
+    return NULL;
 }
 
 static inline long follow_hugetlb_page(struct mm_struct *mm,

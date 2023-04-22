@@ -1,4 +1,18 @@
 # SPDX-License-Identifier: GPL-2.0
+
+CFLAGS_journal.o += -O
+CFLAGS_super.o += -O
+CFLAGS_sb.o += -O
+CFLAGS_io.o += -O
+CFLAGS_tnc.o += -O
+CFLAGS_master.o += -O
+CFLAGS_replay.o += -O
+CFLAGS_log.o += -O
+CFLAGS_gc.o += -O
+CFLAGS_tnc_commit.o += -O
+CFLAGS_lpt.o += -O
+CFLAGS_tnc_misc.o += -O
+
 obj-$(CONFIG_UBIFS_FS) += ubifs.o
 
 ubifs-y += shrinker.o journal.o file.o dir.o super.o sb.o io.o

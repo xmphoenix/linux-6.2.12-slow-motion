@@ -525,7 +525,8 @@ static inline int is_pmd_migration_entry(pmd_t pmd)
 static inline int set_pmd_migration_entry(struct page_vma_mapped_walk *pvmw,
 		struct page *page)
 {
-	BUILD_BUG();
+	//BUILD_BUG();
+    return 0;
 }
 
 static inline void remove_migration_pmd(struct page_vma_mapped_walk *pvmw,

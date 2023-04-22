@@ -6,6 +6,8 @@
 # Rewritten to use lists instead of if-statements.
 # 
 
+CFLAGS_binfmt_elf.o += -O
+
 obj-$(CONFIG_SYSCTL)		+= sysctls.o
 
 obj-y :=	open.o read_write.o file_table.o super.o \

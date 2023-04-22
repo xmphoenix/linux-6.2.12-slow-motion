@@ -1,4 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0
+
+CFLAGS_core.o += -O
+
 obj-y := core.o
 ifneq ($(CONFIG_BPF_JIT_ALWAYS_ON),y)
 # ___bpf_prog_run() needs GCSE disabled on x86; see 3193c0836f203 for details
