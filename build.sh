@@ -93,9 +93,9 @@ image_build()
 qemu_boot()
 {
     if [ $target = "arm32" ];then
-        ./lanuch.sh arm32
+        ./run.sh arm32
     elif [ $target = "arm64" ];then
-        ./lanuch.sh arm64
+        ./run.sh arm64
     else
         echo "the unknow qemu boot command !"
         exit 4
